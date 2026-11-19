@@ -1,0 +1,14 @@
+{
+  "siteTitle": "Inventory services",
+  "collectionName": "Access inventory",
+  "description": "Browse the retained inventory manifest and reconcile outstanding pages.",
+  "apiPath": "/api/inventory",
+  "puzzles": ["allocations", "journal", "extents"],
+  "instructions": {
+    "allocations": "Choose the unheld bin with the most available units (cases times units per case). Break ties by ascending bin ID. Return its bin as record and available units as value.",
+    "journal": "Reconcile ledger {ledger}. For its posted entries, sum received minus issued. Return the ledger ID as record and the signed total as value.",
+    "extents": "The manifest uses inclusive row numbers. Starting at row 1, find the end of the contiguous prefix. Return its final segment ID as record and the first missing row number as value."
+  },
+  "earlySignalAfter": 3,
+  "completeAfter": 12
+}

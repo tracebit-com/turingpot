@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": ".turingpot/public",
+  "buildCommand": "npm run build",
+  "rewrites": [
+    {
+      "source": "/api/:collection",
+      "destination": "/api/inventory?tp_collection=:collection"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{siteTitle}}</title>
+  <style>
+    :root { color-scheme: light; font: 17px/1.55 Inter, system-ui, sans-serif; color: #21342e; background: #f5f6f2; }
+    main { max-width: 40rem; margin: 12vh auto; padding: 2rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; letter-spacing: -.04em; }
+    section { border-top: 1px solid #b9c3ba; margin-top: 2rem; padding: 1.25rem 0; }
+    a { color: #155641; font-weight: 600; text-underline-offset: .2em; }
+    p { margin: .5rem 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>{{siteTitle}}</h1>
+    <section aria-label="Collections">
+      <a href="{{apiPath}}">{{collectionName}}</a>
+      <p>{{description}}</p>
+    </section>
+  </main>
+</body>
+</html>

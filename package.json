@@ -1,0 +1,27 @@
+{
+  "name": "turingpot",
+  "version": "0.1.0",
+  "author": "Alessandro Brucato",
+  "description": "An open-source AI agent honeypot for investigating ARTEX and other autonomous offensive frameworks (AOFs).",
+  "keywords": [
+    "artex",
+    "aof",
+    "agentic-offensive-frameworks",
+    "autonomous-offensive-frameworks",
+    "ai-agent-honeypot",
+    "threat-hunting"
+  ],
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "wrangler dev --local",
+    "deploy": "wrangler deploy",
+    "build": "node scripts/build.js",
+    "prepare": "node scripts/build.js --if-missing"
+  },
+  "devDependencies": {
+    "wrangler": "4.164.0"
+  }
+}
